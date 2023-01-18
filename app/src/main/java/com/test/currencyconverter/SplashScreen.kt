@@ -11,9 +11,9 @@ class SplashScreen : AppCompatActivity() {
 
     private val mRunnable: Runnable = Runnable {
 
-        val homeIntent = Intent(this, HomePage::class.java)
+        val loginIntent = Intent(this, LoginPage::class.java)
         finish()
-        startActivity(homeIntent)
+        startActivity(loginIntent)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
