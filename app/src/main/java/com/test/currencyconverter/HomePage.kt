@@ -8,11 +8,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.gson.GsonBuilder
 
 import kotlinx.android.synthetic.main.activity_home_page.*
-import okhttp3.Callback
-import okhttp3.OkHttpClient
-import okhttp3.Request
+import okhttp3.*
 import java.io.IOException
 
+@Suppress("DEPRECATION")
 class HomePage : NavigationPane() {
 
     private var mDelayHandler: Handler? = null
@@ -53,15 +52,15 @@ class HomePage : NavigationPane() {
 
         client.newCall(request).enqueue(object : Callback {
 
-            override fun onResponse(call: okhttp3.Call?, response: okhttp3.Response?) {
-                val body = response?.body()?.string()
+            override fun onResponse(call: Call, response: Response) {
+                val body = response.body()?.string()
 
                 val gson = GsonBuilder().create()
                 homeFeed = gson.fromJson(body, HomeFeed::class.java)
 
             }
 
-            override fun onFailure(call: okhttp3.Call?, e: IOException?) {
+            override fun onFailure(call: Call, e: IOException) {
                 println("Failed to execute request")
             }
         })
@@ -89,7 +88,7 @@ class HomePage : NavigationPane() {
             }
         }
 
-        mDelayHandler = Handler()
+        this.mDelayHandler = Handler()
         mDelayHandler!!.postDelayed(mRunnable, splashDelay)
     }
 
