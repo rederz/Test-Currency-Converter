@@ -53,7 +53,7 @@ class HomePage : NavigationPane() {
         client.newCall(request).enqueue(object : Callback {
 
             override fun onResponse(call: Call, response: Response) {
-                val body = response.body()?.string()
+                val body = response.body.string()
 
                 val gson = GsonBuilder().create()
                 homeFeed = gson.fromJson(body, HomeFeed::class.java)

@@ -48,11 +48,10 @@
             android:layout_width="287dp"
             android:layout_height="169dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="30dp"
             android:contentDescription="@string/todo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.468"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo" />
@@ -74,28 +73,23 @@
             android:textColorHint="#212121"
             app:layout_constraintBottom_toTopOf="@+id/convertBtn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.726" />
+            />
 
         <Button
             android:id="@+id/convertBtn"
             android:layout_width="219dp"
             android:layout_height="78dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="32dp"
             android:text="@string/convert"
             android:textColor="#616161"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.944" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/toText"

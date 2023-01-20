@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="#FF050370"
+    android:background="@color/material_dynamic_neutral40"
+    android:orientation="vertical"
     android:padding="20dp">
 
     <ImageView
-        android:src="@drawable/ic_launcher_foreground"
-        android:layout_width="75dp"
+        android:layout_width="102dp"
         android:layout_height="75dp"
         android:contentDescription="@string/todo"
-        />
+        android:src="@drawable/leon03" />
 
     <TextView
+        android:id="@+id/name_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/la_currency"
         android:textColor="#FFffffff"
-        android:textStyle="bold"
-        android:layout_marginTop="5dp"
         android:textSize="18sp"
-        android:id="@+id/name_ID"
-        />
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/email_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/email_ID"
-        android:textColor="#FFffffff"
-        android:textSize="14sp"
         android:text="@string/e_mail"
-        />
+        android:textColor="#FFffffff"
+        android:textSize="14sp" />
 
 </LinearLayout>

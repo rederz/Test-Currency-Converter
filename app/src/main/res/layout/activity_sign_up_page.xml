@@ -11,7 +11,7 @@
         android:layout_width="126dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/muli_bold"
         android:text="@string/sign_up"
@@ -19,7 +19,6 @@
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,16 +26,12 @@
         android:id="@+id/first_name"
         android:layout_width="138dp"
         android:layout_height="42dp"
-        android:layout_marginStart="52dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/first_name"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/last_name"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_title"
         tools:ignore="LabelFor" />
 
@@ -44,12 +39,11 @@
         android:id="@+id/last_name"
         android:layout_width="138dp"
         android:layout_height="42dp"
-        android:layout_marginEnd="56dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/last_name"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/email"
         app:layout_constraintTop_toTopOf="@+id/first_name"
         tools:ignore="LabelFor" />
 
@@ -119,16 +113,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/submit"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
