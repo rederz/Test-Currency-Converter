@@ -21,7 +21,7 @@ class LoginPageTest {
     var mActivityTestRule = ActivityTestRule(LoginPage::class.java)
     private var mActivity:LoginPage? = null
 
-    @Test
+    @org.junit.jupiter.api.Test
     fun loginTest(){
         mActivity = mActivityTestRule.activity
 
